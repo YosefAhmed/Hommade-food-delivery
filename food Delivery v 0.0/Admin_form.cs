@@ -15,6 +15,7 @@ namespace food_Delivery_v_0._0
         public Admin_form()
         {
             InitializeComponent();
+            adminReviews1.BackColor = Color.FromArgb(150, Color.Black);
             adminReviews1.Hide();
             Backbutton.Hide();
             label1.Hide();

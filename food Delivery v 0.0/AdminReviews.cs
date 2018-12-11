@@ -31,6 +31,7 @@ namespace food_Delivery_v_0._0.User_Controls
         {
             request_txt.Hide();
             request_btn.Hide();
+            meal_id.Hide();
             dataGridView1.Show();
             user.con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(@"SELECT * FROM Order_Record ", user.con);
@@ -44,6 +45,7 @@ namespace food_Delivery_v_0._0.User_Controls
         {
             request_txt.Hide();
             request_btn.Hide();
+            meal_id.Hide();
             dataGridView1.Show();
             user.con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(@"SELECT * FROM Rate ", user.con);
@@ -57,6 +59,7 @@ namespace food_Delivery_v_0._0.User_Controls
         {
             request_txt.Hide();
             request_btn.Hide();
+            meal_id.Hide();
             dataGridView1.Show();
             user.con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(@"SELECT * FROM Admin ", user.con);
@@ -70,6 +73,7 @@ namespace food_Delivery_v_0._0.User_Controls
         {
             request_txt.Hide();
             request_btn.Hide();
+            meal_id.Hide();
             dataGridView1.Show();
             user.con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(@"SELECT * FROM Customer ", user.con);
@@ -83,6 +87,7 @@ namespace food_Delivery_v_0._0.User_Controls
         {
             request_txt.Hide();
             request_btn.Hide();
+            meal_id.Hide();
             dataGridView1.Show();
             user.con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(@"SELECT * FROM Cooks ", user.con);
@@ -96,6 +101,7 @@ namespace food_Delivery_v_0._0.User_Controls
         {
             request_txt.Hide();
             request_btn.Hide();
+            meal_id.Hide();
             dataGridView1.Show();
             user.con.Open();
             SqlDataAdapter sda = new SqlDataAdapter(@"SELECT * FROM Driver ", user.con);
