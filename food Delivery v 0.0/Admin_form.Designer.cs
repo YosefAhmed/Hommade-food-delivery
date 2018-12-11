@@ -39,10 +39,11 @@
             this.adminReviewButton = new System.Windows.Forms.Button();
             this.Backbutton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.adminReviews1 = new food_Delivery_v_0._0.User_Controls.AdminReviews();
             this.gradientPanel1 = new GradientPanelDemo.GradientPanel();
             this.footerBottom = new GradientPanelDemo.GradientPanel();
             this.TopHeader = new GradientPanelDemo.GradientPanel();
+            this.elipseControl1 = new ElipseToolDemo.ElipseControl();
+            this.adminReviews1 = new food_Delivery_v_0._0.User_Controls.AdminReviews();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton2)).BeginInit();
@@ -155,7 +156,7 @@
             this.Backbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Backbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Backbutton.ForeColor = System.Drawing.Color.IndianRed;
-            this.Backbutton.Location = new System.Drawing.Point(757, 548);
+            this.Backbutton.Location = new System.Drawing.Point(746, 548);
             this.Backbutton.Name = "Backbutton";
             this.Backbutton.Size = new System.Drawing.Size(96, 39);
             this.Backbutton.TabIndex = 14;
@@ -174,15 +175,6 @@
             this.label1.Size = new System.Drawing.Size(321, 63);
             this.label1.TabIndex = 15;
             this.label1.Text = "Admin Reviews";
-            // 
-            // adminReviews1
-            // 
-            this.adminReviews1.BackColor = System.Drawing.Color.Transparent;
-            this.adminReviews1.Location = new System.Drawing.Point(14, 212);
-            this.adminReviews1.Margin = new System.Windows.Forms.Padding(5);
-            this.adminReviews1.Name = "adminReviews1";
-            this.adminReviews1.Size = new System.Drawing.Size(826, 328);
-            this.adminReviews1.TabIndex = 13;
             // 
             // gradientPanel1
             // 
@@ -211,6 +203,20 @@
             this.TopHeader.Size = new System.Drawing.Size(790, 17);
             this.TopHeader.TabIndex = 8;
             // 
+            // elipseControl1
+            // 
+            this.elipseControl1.CornerRadius = 100;
+            this.elipseControl1.TargetControl = this;
+            // 
+            // adminReviews1
+            // 
+            this.adminReviews1.BackColor = System.Drawing.Color.Transparent;
+            this.adminReviews1.Location = new System.Drawing.Point(14, 212);
+            this.adminReviews1.Margin = new System.Windows.Forms.Padding(5);
+            this.adminReviews1.Name = "adminReviews1";
+            this.adminReviews1.Size = new System.Drawing.Size(826, 328);
+            this.adminReviews1.TabIndex = 13;
+            // 
             // Admin_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,6 +236,7 @@
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin_form";
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
@@ -252,10 +259,11 @@
         private GradientPanelDemo.GradientPanel gradientPanel1;
         private System.Windows.Forms.Button fire_btn;
         private System.Windows.Forms.Button adminReviewButton;
-        private User_Controls.AdminReviews adminReviews1;
         private System.Windows.Forms.Button Backbutton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private CustomImageButton customImageButton1;
+        private ElipseToolDemo.ElipseControl elipseControl1;
+        private User_Controls.AdminReviews adminReviews1;
     }
 }

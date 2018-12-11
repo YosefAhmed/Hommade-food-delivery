@@ -22,6 +22,7 @@ namespace food_Delivery_v_0._0
             signUpControl1.Hide();
             BackButton.Hide();
             Controls.Add(SignInControlObj);                           //adding the object dynamically
+            SignInControlObj.BackColor = Color.FromArgb(150, Color.Black);
             SignInControlObj.Visible = false;                         //hide the control in the first time it's loaded
         }
         SignInControl SignInControlObj = new SignInControl();         //creating object from the signincontrol to load in dynamically
