@@ -102,30 +102,24 @@ namespace food_Delivery_v_0._0
         }
 
         //returns number of rows in a tabel
-        public int rows_count(string table_Name)
+        public string rows_count(string table_Name)
         {
-            cmd=new SqlCommand("select count(*) from"+table_Name+"");
+            cmd=new SqlCommand("select count(*) from"+table_Name+"",con);
             con.Open();
-            int counter = cmd.ExecuteNonQuery();
-            //int counter = Convert.ToInt32(RD.ToString());
+            string counter;
+                SqlDataReader rd= cmd.ExecuteReader();
+
+            counter=rd[""].ToString();
             con.Close();
             return counter;
         }
 
-        public string select_meal_requested()
+        public void done_request(string meal_id)
         {
-            string counter = "";
-            con.Close();
-            cmd = new SqlCommand("select meal_id from check_request where checker_id ='" +SignInControl.checker_username + "'", con);
+            cmd = new SqlCommand("delete from check_request where meal_id='" +Convert.ToInt32(meal_id) + "'", con);
             con.Open();
-            SqlDataReader RD= cmd.ExecuteReader();
-            if(RD.Read())
-             counter =RD["meal_id"].ToString();
-         //   RD.cmd.ExecuteNonQuery();
-         //  int counter= Convert.ToInt32(RD["meal_id"]);
+            cmd.ExecuteNonQuery();
             con.Close();
-            return counter;
-            
         }
     }
 }

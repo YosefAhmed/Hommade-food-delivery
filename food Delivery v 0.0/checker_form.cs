@@ -18,9 +18,9 @@ namespace food_Delivery_v_0._0
         public checker_form()
         {
             InitializeComponent();
-            checker_requests1.Hide();
+            requests_layout_panl.Hide();
             notification_lbl.Hide();
-          //  notification_lbl.Text="you have " +user.rows_count("Checker")+" requests";
+          //notification_lbl.Text="you have " +user.rows_count("Checker")+" requests";
         }
         
         private void customImageButton2_Click(object sender, EventArgs e)
@@ -45,27 +45,30 @@ namespace food_Delivery_v_0._0
         {
             if(i==0)
             {
-                checker_requests1.Show();
+                requests_layout_panl.Show();
                 notification_lbl.Show();
+                requests_layout_panl.Controls.Clear();
                 i = 1;
             }
             else if (i == 1)
             {
-                checker_requests1.Hide();
+                requests_layout_panl.Hide();
                 notification_lbl.Show();
                 i = 0;
             }
             user.cmd=new SqlCommand("select meal_id from check_request where checker_id='"+SignInControl.checker_username+"'",user.con);
             user.con.Open();
+            string counter = "";
            SqlDataReader dr = user.cmd.ExecuteReader() ;
-            
-           while (dr.HasRows)
+           while (dr.Read())
            {
-                   Label mealname = new Label();
-                   mealname.Text = "" + user.select_meal_requested()+"";
-                   checker_requests1.flowLayoutPanel1.Controls.Add(mealname);  
-                    
+               counter = dr["meal_id"].ToString();
+               checker_requests cr = new checker_requests();
+                 cr.put(counter);
+                  requests_layout_panl.Controls.Add(cr);  
+                  
            }
+           dr.Close();
            user.con.Close();
             //Label mealname=new Label();
             // mealname.Text = "MealName";     

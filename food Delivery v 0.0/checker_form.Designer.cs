@@ -32,11 +32,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.checker_requests1 = new food_Delivery_v_0._0.checker_requests();
+            this.notification_lbl = new System.Windows.Forms.Label();
+            this.requests_layout_panl = new System.Windows.Forms.FlowLayoutPanel();
             this.customImageButton3 = new food_Delivery_v_0._0.CustomImageButton();
             this.customImageButton1 = new food_Delivery_v_0._0.CustomImageButton();
             this.customImageButton2 = new food_Delivery_v_0._0.CustomImageButton();
-            this.notification_lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton2)).BeginInit();
@@ -75,12 +75,25 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Requests";
             // 
-            // checker_requests1
+            // notification_lbl
             // 
-            this.checker_requests1.Location = new System.Drawing.Point(115, 39);
-            this.checker_requests1.Name = "checker_requests1";
-            this.checker_requests1.Size = new System.Drawing.Size(203, 280);
-            this.checker_requests1.TabIndex = 21;
+            this.notification_lbl.AutoSize = true;
+            this.notification_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.notification_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notification_lbl.Location = new System.Drawing.Point(118, 16);
+            this.notification_lbl.Name = "notification_lbl";
+            this.notification_lbl.Size = new System.Drawing.Size(128, 16);
+            this.notification_lbl.TabIndex = 22;
+            this.notification_lbl.Text = "you have 0 requests";
+            // 
+            // requests_layout_panl
+            // 
+            this.requests_layout_panl.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.requests_layout_panl.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.requests_layout_panl.Location = new System.Drawing.Point(121, 35);
+            this.requests_layout_panl.Name = "requests_layout_panl";
+            this.requests_layout_panl.Size = new System.Drawing.Size(125, 213);
+            this.requests_layout_panl.TabIndex = 23;
             // 
             // customImageButton3
             // 
@@ -123,22 +136,12 @@
             this.customImageButton2.TabStop = false;
             this.customImageButton2.Click += new System.EventHandler(this.customImageButton2_Click);
             // 
-            // notification_lbl
-            // 
-            this.notification_lbl.AutoSize = true;
-            this.notification_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.notification_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.notification_lbl.Location = new System.Drawing.Point(118, 16);
-            this.notification_lbl.Name = "notification_lbl";
-            this.notification_lbl.Size = new System.Drawing.Size(128, 16);
-            this.notification_lbl.TabIndex = 22;
-            this.notification_lbl.Text = "you have 0 requests";
-            // 
             // checker_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(771, 388);
+            this.Controls.Add(this.requests_layout_panl);
             this.Controls.Add(this.notification_lbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.customImageButton3);
@@ -146,7 +149,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.customImageButton2);
-            this.Controls.Add(this.checker_requests1);
             this.Name = "checker_form";
             this.Text = "Checker";
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton3)).EndInit();
@@ -165,7 +167,7 @@
         private CustomImageButton customImageButton2;
         private CustomImageButton customImageButton3;
         private System.Windows.Forms.Label label1;
-        public checker_requests checker_requests1;
         private System.Windows.Forms.Label notification_lbl;
+        private System.Windows.Forms.FlowLayoutPanel requests_layout_panl;
     }
 }
