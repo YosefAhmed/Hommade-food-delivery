@@ -18,17 +18,16 @@ namespace food_Delivery_v_0._0
             InitializeComponent();
             label6.BackColor = Color.FromArgb(150, Color.Black);
             label7.BackColor = Color.FromArgb(150, Color.Black);
-            signUpControl1.BackColor = Color.FromArgb(150, Color.Black);
-            signUpControl1.Hide();
-            BackButton.Hide();
-            Controls.Add(SignInControlObj);                           //adding the object dynamically
-            SignInControlObj.BackColor = Color.FromArgb(150, Color.Black);
-            SignInControlObj.Visible = false;                         //hide the control in the first time it's loaded
+            SignUpControl.BackColor = Color.FromArgb(150, Color.Black);
+            SignUpControl.Hide();
+            BackBt.Hide();
+            SignInControl.BackColor = Color.FromArgb(150, Color.Black);
+            SignInControl.Hide();
         }
-        SignInControl SignInControlObj = new SignInControl();         //creating object from the signincontrol to load in dynamically
+
         private void regButton_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void logInButton_Click(object sender, EventArgs e)
@@ -36,19 +35,20 @@ namespace food_Delivery_v_0._0
 
         }
 
-        //private int Img_Num = 1;
-        //private void Load_Next_Img()
-        //{
-        //    if (Img_Num == 4)
-        //        Img_Num = 1;
+        //Slider
+        private int Img_Num = 1;
+        private void Load_Next_Img()
+        {
+            if (Img_Num == 4)
+                Img_Num = 1;
 
-        //    Slider_Pic.ImageLocation = string.Format(@"Images\{0}.png", Img_Num);
-        //    Img_Num++;
-        //}
+            Slider_Pic.ImageLocation = string.Format(@"Images\{0}.png", Img_Num);
+            Img_Num++;
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //Load_Next_Img();
+            Load_Next_Img();
         }
 
         private void circularButton1_MouseEnter(object sender, EventArgs e)
@@ -68,13 +68,13 @@ namespace food_Delivery_v_0._0
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void customImageButton2_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-            if(result == DialogResult.Yes)
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
                 Application.Exit();
         }
 
@@ -85,24 +85,20 @@ namespace food_Delivery_v_0._0
 
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            if (signUpControl1.Visible)
-                signUpControl1.Visible = false;
+            SignUpControl.Hide();
             label6.Hide();
             label7.Hide();
-            SignInControlObj.Location = new Point(130, 120);//to adjust the location of the control
-            SignInControlObj.Visible = true;
-            BackButton.Show();
+            bunifuTransition1.ShowSync(SignInControl);
+            BackBt.Show();
         }
 
         private void customImageButton1_Click(object sender, EventArgs e)
         {
-            if (SignInControlObj.Visible)
-                SignInControlObj.Hide();
+            SignInControl.Hide();
             label6.Hide();
             label7.Hide();
-            bunifuTransition1.ShowSync(signUpControl1);
-            bunifuTransition1.ShowSync(BackButton);
-
+            bunifuTransition1.ShowSync(SignUpControl);
+            BackBt.Show();
         }
 
         private void customImageButton3_Click(object sender, EventArgs e)
@@ -112,9 +108,9 @@ namespace food_Delivery_v_0._0
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            signUpControl1.Hide();
-            SignInControlObj.Hide();
-            BackButton.Hide();
+            SignUpControl.Hide();
+            SignInControl.Hide();
+            BackBt.Hide();
             label6.Show();
             label7.Show();
         }
@@ -122,6 +118,25 @@ namespace food_Delivery_v_0._0
         private void signUpControl1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Back_bt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void BackBt_Click(object sender, EventArgs e)
+        {
+            SignUpControl.Hide();
+            SignInControl.Hide();
+            BackBt.Hide();
+            label6.Show();
+            label7.Show();
         }
     }
 }

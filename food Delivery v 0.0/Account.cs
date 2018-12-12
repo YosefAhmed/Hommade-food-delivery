@@ -12,7 +12,7 @@ namespace food_Delivery_v_0._0
 
     class Account
     {
-        public SqlConnection con = new SqlConnection(@"Data Source=yousef;Initial Catalog=is_project;Integrated Security=True");
+        public SqlConnection con = new SqlConnection(@"Data Source=desktop-sd63um7\sqlexpress;Initial Catalog=is_project;Integrated Security=True");
         public  SqlCommand cmd;
 
         //Users data

@@ -46,6 +46,7 @@ namespace food_Delivery_v_0._0
                         if (reader.HasRows)
                         {
                             MessageBox.Show("sign in successful", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ParentForm.Hide();
                             if (sqlTable == "Customer")
                             {
                                 //the customer's options goes here
@@ -56,7 +57,8 @@ namespace food_Delivery_v_0._0
                             }
                             else if (sqlTable == "Cooks")
                             {
-                                //cook's options goes here
+                                CookForm cf = new CookForm();
+                                cf.Show();
                             }
                                 
                             else if (sqlTable == "Checker")
@@ -65,14 +67,12 @@ namespace food_Delivery_v_0._0
                                 checker_username = usernametxt.Text;
                                 checker_form ch = new checker_form();
                                 ch.Show();
-                                this.Hide();
                             }
                             else if (sqlTable == "Admin")
                             {
                                 //admin's options goes here
                                 Admin_form af = new Admin_form();
                                 af.Show();
-                                this.Hide();
                             }
                         }
                         else

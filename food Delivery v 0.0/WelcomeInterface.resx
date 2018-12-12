@@ -908,6 +908,14 @@
         jXmYNYqSyH6S/mcaGvoHOk4JpMymyW4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="BackBt.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAI9JREFUWEft
+        lkkKgDAQBAOCflrQk77H5W1etRsVQvAQF5gRuqAgDASKJIcEIcRPaA9dwJD10DwqjqEDLKAJVzElNCGN
+        GaFiSBozQcUQ1zEzdBOzwA5y/tbbcFMc87W3cRdE0iheWQ/PY3/jY7g5juKjrqApispFUbkoKperKLMv
+        7EkcVXPgAUY1+1II4ZkQNvtDlSEW56GxAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="dragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>104, 17</value>
   </metadata>

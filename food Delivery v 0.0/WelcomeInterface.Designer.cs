@@ -35,25 +35,28 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.customImageButton2 = new food_Delivery_v_0._0.CustomImageButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.customImageButton1 = new food_Delivery_v_0._0.CustomImageButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.SignInButton = new food_Delivery_v_0._0.CustomImageButton();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.BackButton = new System.Windows.Forms.Button();
-            this.signUpControl1 = new food_Delivery_v_0._0.SignUpControl();
+            this.Slider_Pic = new System.Windows.Forms.PictureBox();
+            this.SignInControl = new food_Delivery_v_0._0.SignInControl();
+            this.BackBt = new RoundButtonDemo.CircularButton();
+            this.SignUpControl = new food_Delivery_v_0._0.SignUpControl();
             this.transparentControl2 = new food_Delivery_v_0._0.TransparentControl();
             this.transparentControl1 = new food_Delivery_v_0._0.TransparentControl();
             this.footerBottom = new GradientPanelDemo.GradientPanel();
             this.TopHeader = new GradientPanelDemo.GradientPanel();
+            this.customImageButton2 = new food_Delivery_v_0._0.CustomImageButton();
+            this.customImageButton1 = new food_Delivery_v_0._0.CustomImageButton();
+            this.SignInButton = new food_Delivery_v_0._0.CustomImageButton();
             this.dragControl1 = new DragControlDemo.DragControl();
             this.elipseControl1 = new ElipseToolDemo.ElipseControl();
             this.dragControl2 = new DragControlDemo.DragControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Slider_Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SignInButton)).BeginInit();
@@ -105,21 +108,6 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Exit";
             // 
-            // customImageButton2
-            // 
-            this.customImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.customImageButton2, BunifuAnimatorNS.DecorationType.None);
-            this.customImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("customImageButton2.Image")));
-            this.customImageButton2.ImageHover = ((System.Drawing.Image)(resources.GetObject("customImageButton2.ImageHover")));
-            this.customImageButton2.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customImageButton2.ImageNormal")));
-            this.customImageButton2.Location = new System.Drawing.Point(714, 14);
-            this.customImageButton2.Name = "customImageButton2";
-            this.customImageButton2.Size = new System.Drawing.Size(65, 57);
-            this.customImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customImageButton2.TabIndex = 10;
-            this.customImageButton2.TabStop = false;
-            this.customImageButton2.Click += new System.EventHandler(this.customImageButton2_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -131,21 +119,6 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Sign Up";
             // 
-            // customImageButton1
-            // 
-            this.customImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.customImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.customImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("customImageButton1.Image")));
-            this.customImageButton1.ImageHover = ((System.Drawing.Image)(resources.GetObject("customImageButton1.ImageHover")));
-            this.customImageButton1.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customImageButton1.ImageNormal")));
-            this.customImageButton1.Location = new System.Drawing.Point(622, 10);
-            this.customImageButton1.Name = "customImageButton1";
-            this.customImageButton1.Size = new System.Drawing.Size(72, 62);
-            this.customImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customImageButton1.TabIndex = 8;
-            this.customImageButton1.TabStop = false;
-            this.customImageButton1.Click += new System.EventHandler(this.customImageButton1_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -156,21 +129,6 @@
             this.label1.Size = new System.Drawing.Size(61, 21);
             this.label1.TabIndex = 7;
             this.label1.Text = "Sign In";
-            // 
-            // SignInButton
-            // 
-            this.SignInButton.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.SignInButton, BunifuAnimatorNS.DecorationType.None);
-            this.SignInButton.Image = ((System.Drawing.Image)(resources.GetObject("SignInButton.Image")));
-            this.SignInButton.ImageHover = ((System.Drawing.Image)(resources.GetObject("SignInButton.ImageHover")));
-            this.SignInButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("SignInButton.ImageNormal")));
-            this.SignInButton.Location = new System.Drawing.Point(530, 10);
-            this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(72, 62);
-            this.SignInButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SignInButton.TabIndex = 6;
-            this.SignInButton.TabStop = false;
-            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
             // 
             // bunifuTransition1
             // 
@@ -220,45 +178,67 @@
             this.label7.Text = "If you have an account sign in now, and if you don\'t harry up and Sign Up yalla x" +
     "D";
             // 
-            // BackButton
+            // Slider_Pic
             // 
-            this.bunifuTransition1.SetDecoration(this.BackButton, BunifuAnimatorNS.DecorationType.None);
-            this.BackButton.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButton.Location = new System.Drawing.Point(626, 401);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(69, 55);
-            this.BackButton.TabIndex = 31;
-            this.BackButton.Text = "Back";
-            this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            this.Slider_Pic.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.Slider_Pic, BunifuAnimatorNS.DecorationType.None);
+            this.Slider_Pic.Location = new System.Drawing.Point(0, 114);
+            this.Slider_Pic.Name = "Slider_Pic";
+            this.Slider_Pic.Size = new System.Drawing.Size(796, 350);
+            this.Slider_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Slider_Pic.TabIndex = 32;
+            this.Slider_Pic.TabStop = false;
             // 
-            // signUpControl1
+            // SignInControl
             // 
-            this.bunifuTransition1.SetDecoration(this.signUpControl1, BunifuAnimatorNS.DecorationType.None);
-            this.signUpControl1.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signUpControl1.Location = new System.Drawing.Point(142, 120);
-            this.signUpControl1.Margin = new System.Windows.Forms.Padding(5);
-            this.signUpControl1.Name = "signUpControl1";
-            this.signUpControl1.Size = new System.Drawing.Size(485, 335);
-            this.signUpControl1.TabIndex = 13;
-            this.signUpControl1.Load += new System.EventHandler(this.signUpControl1_Load);
+            this.SignInControl.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bunifuTransition1.SetDecoration(this.SignInControl, BunifuAnimatorNS.DecorationType.None);
+            this.SignInControl.Location = new System.Drawing.Point(142, 143);
+            this.SignInControl.Name = "SignInControl";
+            this.SignInControl.Size = new System.Drawing.Size(485, 280);
+            this.SignInControl.TabIndex = 34;
+            // 
+            // BackBt
+            // 
+            this.BackBt.BackColor = System.Drawing.Color.Sienna;
+            this.bunifuTransition1.SetDecoration(this.BackBt, BunifuAnimatorNS.DecorationType.None);
+            this.BackBt.FlatAppearance.BorderSize = 0;
+            this.BackBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackBt.Image = ((System.Drawing.Image)(resources.GetObject("BackBt.Image")));
+            this.BackBt.Location = new System.Drawing.Point(733, 405);
+            this.BackBt.Name = "BackBt";
+            this.BackBt.Size = new System.Drawing.Size(50, 45);
+            this.BackBt.TabIndex = 33;
+            this.BackBt.UseVisualStyleBackColor = false;
+            this.BackBt.Click += new System.EventHandler(this.BackBt_Click);
+            // 
+            // SignUpControl
+            // 
+            this.bunifuTransition1.SetDecoration(this.SignUpControl, BunifuAnimatorNS.DecorationType.None);
+            this.SignUpControl.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpControl.Location = new System.Drawing.Point(142, 120);
+            this.SignUpControl.Margin = new System.Windows.Forms.Padding(5);
+            this.SignUpControl.Name = "SignUpControl";
+            this.SignUpControl.Size = new System.Drawing.Size(485, 335);
+            this.SignUpControl.TabIndex = 13;
+            this.SignUpControl.Load += new System.EventHandler(this.signUpControl1_Load);
             // 
             // transparentControl2
             // 
             this.bunifuTransition1.SetDecoration(this.transparentControl2, BunifuAnimatorNS.DecorationType.None);
-            this.transparentControl2.Location = new System.Drawing.Point(0, 627);
-            this.transparentControl2.Margin = new System.Windows.Forms.Padding(13);
+            this.transparentControl2.Location = new System.Drawing.Point(0, 1636);
+            this.transparentControl2.Margin = new System.Windows.Forms.Padding(37, 34, 37, 34);
             this.transparentControl2.Name = "transparentControl2";
-            this.transparentControl2.Size = new System.Drawing.Size(2212, 200);
+            this.transparentControl2.Size = new System.Drawing.Size(6145, 522);
             this.transparentControl2.TabIndex = 0;
             // 
             // transparentControl1
             // 
             this.bunifuTransition1.SetDecoration(this.transparentControl1, BunifuAnimatorNS.DecorationType.None);
-            this.transparentControl1.Location = new System.Drawing.Point(0, 4507);
-            this.transparentControl1.Margin = new System.Windows.Forms.Padding(103, 89, 103, 89);
+            this.transparentControl1.Location = new System.Drawing.Point(0, 11762);
+            this.transparentControl1.Margin = new System.Windows.Forms.Padding(287, 233, 287, 233);
             this.transparentControl1.Name = "transparentControl1";
-            this.transparentControl1.Size = new System.Drawing.Size(17070, 1320);
+            this.transparentControl1.Size = new System.Drawing.Size(47417, 3444);
             this.transparentControl1.TabIndex = 7;
             // 
             // footerBottom
@@ -281,6 +261,51 @@
             this.TopHeader.Size = new System.Drawing.Size(790, 17);
             this.TopHeader.TabIndex = 5;
             // 
+            // customImageButton2
+            // 
+            this.customImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.customImageButton2, BunifuAnimatorNS.DecorationType.None);
+            this.customImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("customImageButton2.Image")));
+            this.customImageButton2.ImageHover = ((System.Drawing.Image)(resources.GetObject("customImageButton2.ImageHover")));
+            this.customImageButton2.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customImageButton2.ImageNormal")));
+            this.customImageButton2.Location = new System.Drawing.Point(714, 14);
+            this.customImageButton2.Name = "customImageButton2";
+            this.customImageButton2.Size = new System.Drawing.Size(65, 57);
+            this.customImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.customImageButton2.TabIndex = 10;
+            this.customImageButton2.TabStop = false;
+            this.customImageButton2.Click += new System.EventHandler(this.customImageButton2_Click);
+            // 
+            // customImageButton1
+            // 
+            this.customImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.customImageButton1, BunifuAnimatorNS.DecorationType.None);
+            this.customImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("customImageButton1.Image")));
+            this.customImageButton1.ImageHover = ((System.Drawing.Image)(resources.GetObject("customImageButton1.ImageHover")));
+            this.customImageButton1.ImageNormal = ((System.Drawing.Image)(resources.GetObject("customImageButton1.ImageNormal")));
+            this.customImageButton1.Location = new System.Drawing.Point(622, 10);
+            this.customImageButton1.Name = "customImageButton1";
+            this.customImageButton1.Size = new System.Drawing.Size(72, 62);
+            this.customImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.customImageButton1.TabIndex = 8;
+            this.customImageButton1.TabStop = false;
+            this.customImageButton1.Click += new System.EventHandler(this.customImageButton1_Click);
+            // 
+            // SignInButton
+            // 
+            this.SignInButton.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.SignInButton, BunifuAnimatorNS.DecorationType.None);
+            this.SignInButton.Image = ((System.Drawing.Image)(resources.GetObject("SignInButton.Image")));
+            this.SignInButton.ImageHover = ((System.Drawing.Image)(resources.GetObject("SignInButton.ImageHover")));
+            this.SignInButton.ImageNormal = ((System.Drawing.Image)(resources.GetObject("SignInButton.ImageNormal")));
+            this.SignInButton.Location = new System.Drawing.Point(530, 10);
+            this.SignInButton.Name = "SignInButton";
+            this.SignInButton.Size = new System.Drawing.Size(72, 62);
+            this.SignInButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SignInButton.TabIndex = 6;
+            this.SignInButton.TabStop = false;
+            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
+            // 
             // dragControl1
             // 
             this.dragControl1.SelectControl = this.Header;
@@ -300,8 +325,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(796, 476);
-            this.Controls.Add(this.BackButton);
-            this.Controls.Add(this.signUpControl1);
+            this.Controls.Add(this.SignInControl);
+            this.Controls.Add(this.BackBt);
+            this.Controls.Add(this.SignUpControl);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.transparentControl2);
@@ -309,6 +335,7 @@
             this.Controls.Add(this.footerBottom);
             this.Controls.Add(this.TopHeader);
             this.Controls.Add(this.Header);
+            this.Controls.Add(this.Slider_Pic);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -320,6 +347,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Slider_Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SignInButton)).EndInit();
@@ -348,8 +376,10 @@
         private TransparentControl transparentControl2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private SignUpControl signUpControl1;
-        private System.Windows.Forms.Button BackButton;
+        private SignUpControl SignUpControl;
+        private RoundButtonDemo.CircularButton BackBt;
+        private System.Windows.Forms.PictureBox Slider_Pic;
+        private SignInControl SignInControl;
     }
 }
 
