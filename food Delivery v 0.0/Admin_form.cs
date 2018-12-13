@@ -22,8 +22,7 @@ namespace food_Delivery_v_0._0
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            fire f = new fire();
-            f.Show();
+           
         }
         
         private void customImageButton2_Click(object sender, EventArgs e)
@@ -33,14 +32,6 @@ namespace food_Delivery_v_0._0
                 Application.Exit();
         }
 
-        private void adminReviewButton_Click(object sender, EventArgs e)
-        {
-            fire_btn.Hide();
-            adminReviewButton.Hide();
-            Backbutton.Show();
-            adminReviews1.Show();
-            label1.Show();
-        }
         private void Backbutton_Click_1(object sender, EventArgs e)
         {
             fire_btn.Show();
@@ -60,14 +51,19 @@ namespace food_Delivery_v_0._0
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void fire_btn_Click(object sender, EventArgs e)
         {
-
+            fire f = new fire();
+            f.Show();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void adminReviewButton_Click_1(object sender, EventArgs e)
         {
-
+            fire_btn.Hide();
+            adminReviewButton.Hide();
+            Backbutton.Show();
+            adminReviews1.Show();
+            label1.Show();
         }
     }
 }
