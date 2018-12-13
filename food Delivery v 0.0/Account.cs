@@ -12,7 +12,7 @@ namespace food_Delivery_v_0._0
 
     class Account
     {
-        public SqlConnection con = new SqlConnection(@"Data Source=desktop-sd63um7\sqlexpress;Initial Catalog=is_project;Integrated Security=True");
+        public SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-CEO0JJM\KAMAL1;Initial Catalog=is_project;Integrated Security=True");
         public  SqlCommand cmd;
 
         //Users data
@@ -101,17 +101,25 @@ namespace food_Delivery_v_0._0
             }
         }
 
-        //returns number of rows in a tabel
-        public string rows_count(string table_Name)
+        //Function for checking if a request is already existed
+        public bool check_requested(int Meal_id)
         {
-            cmd=new SqlCommand("select count(*) from"+table_Name+"",con);
             con.Open();
-            string counter;
-                SqlDataReader rd= cmd.ExecuteReader();
+            cmd = new SqlCommand("select * from check_request  where meal_ID='" + Meal_id + "'", con);
+            SqlDataReader RD = cmd.ExecuteReader();
 
-            counter=rd[""].ToString();
-            con.Close();
-            return counter;
+            if (RD.Read())
+            {
+                MessageBox.Show("This requist has been send !", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                con.Close();
+                return true;
+            }
+
+            else
+            {
+                con.Close();
+                return false;
+            }
         }
 
         public void done_request(string meal_id)

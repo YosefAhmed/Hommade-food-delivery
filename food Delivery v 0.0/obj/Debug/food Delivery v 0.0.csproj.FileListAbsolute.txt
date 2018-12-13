@@ -200,7 +200,6 @@ D:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food Del
 D:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.exe
 D:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.pdb
 D:\projects\Homemade_food Delivery System\food Delivery v 0.0\bin\Debug\food Delivery v 0.0.pdb
-<<<<<<< HEAD
 D:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.csprojResolveAssemblyReference.cache
 =======
 C:\Users\ok\Desktop\Hommade-food-delivery-system\food Delivery v 0.0\bin\Debug\food Delivery v 0.0.exe.config
@@ -253,3 +252,7 @@ C:\Users\Mohammed\Desktop\PROJECTS+\Hommade-food-delivery-system-master\food Del
 C:\Users\Mohammed\Desktop\PROJECTS+\Hommade-food-delivery-system-master\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.Cook_Menu.resources
 C:\Users\Mohammed\Desktop\PROJECTS+\Hommade-food-delivery-system-master\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.EditMealForm.resources
 C:\Users\Mohammed\Desktop\PROJECTS+\Hommade-food-delivery-system-master\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.AddMealForm.resources
+C:\Users\ok\Desktop\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.AddMealForm.resources
+C:\Users\ok\Desktop\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.CookForm.resources
+C:\Users\ok\Desktop\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.Cook_Menu.resources
+C:\Users\ok\Desktop\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.EditMealForm.resources
