@@ -253,32 +253,3 @@ C:\Users\Mohammed\Desktop\PROJECTS+\Hommade-food-delivery-system-master\food Del
 C:\Users\Mohammed\Desktop\PROJECTS+\Hommade-food-delivery-system-master\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.Cook_Menu.resources
 C:\Users\Mohammed\Desktop\PROJECTS+\Hommade-food-delivery-system-master\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.EditMealForm.resources
 C:\Users\Mohammed\Desktop\PROJECTS+\Hommade-food-delivery-system-master\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.AddMealForm.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\bin\Debug\food Delivery v 0.0.exe.config
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\bin\Debug\food Delivery v 0.0.exe
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\bin\Debug\food Delivery v 0.0.pdb
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\bin\Debug\AlphaBlendTextBox.dll
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\bin\Debug\Bunifu_UI_v1.52.dll
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.csprojAssemblyReference.cache
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.AddMealForm.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.User_Controls.AdminReviews.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.Admin_form.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.checker_requests.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.CookForm.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.Cook_Menu.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.EditMealForm.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.fire.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.checker_form.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.CustomImageButton.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.User_Controls.record_forall.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.User_Controls.show_all.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.SignInControl.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.SignUpControl.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.TransparentControl.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.WelcomeInterface.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.Properties.Resources.resources
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.csproj.GenerateResource.cache
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.csproj.CoreCompileInputs.cache
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.csproj.CopyComplete
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.exe
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.pdb
-C:\Users\Mohammed\Documents\GitHub\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.DeleteMealForm.resources

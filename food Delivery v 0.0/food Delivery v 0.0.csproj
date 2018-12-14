@@ -88,12 +88,6 @@
     <Compile Include="Cook_Menu.Designer.cs">
       <DependentUpon>Cook_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeleteMealForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeleteMealForm.Designer.cs">
-      <DependentUpon>DeleteMealForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="EditMealForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,9 +181,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cook_Menu.resx">
       <DependentUpon>Cook_Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeleteMealForm.resx">
-      <DependentUpon>DeleteMealForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditMealForm.resx">
       <DependentUpon>EditMealForm.cs</DependentUpon>
