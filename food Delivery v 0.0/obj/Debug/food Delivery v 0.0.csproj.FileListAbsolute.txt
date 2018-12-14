@@ -310,3 +310,28 @@ C:\Users\ok\Desktop\IS\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debu
 C:\Users\ok\Desktop\IS\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.csproj.CopyComplete
 C:\Users\ok\Desktop\IS\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.exe
 C:\Users\ok\Desktop\IS\Hommade-food-delivery-system\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.pdb
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\bin\Debug\food Delivery v 0.0.exe
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\bin\Debug\food Delivery v 0.0.exe.config
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\bin\Debug\food Delivery v 0.0.pdb
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.AddMealForm.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.User_Controls.AdminReviews.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.Admin_form.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.checker_requests.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.driverForm.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.customerForm.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.CookForm.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.Cook_Menu.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.EditMealForm.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.fire.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.checker_form.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.CustomImageButton.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.User_Controls.record_forall.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.User_Controls.show_all.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.SignInControl.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.SignUpControl.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.TransparentControl.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.WelcomeInterface.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food_Delivery_v_0._0.Properties.Resources.resources
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.csproj.GenerateResource.Cache
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.exe
+E:\projects\Homemade_food Delivery System\food Delivery v 0.0\obj\Debug\food Delivery v 0.0.pdb
