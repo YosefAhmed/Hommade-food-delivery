@@ -22,6 +22,17 @@ namespace food_Delivery_v_0._0.User_Controls
         private void AdminReviews_Load(object sender, EventArgs e)
         {
             dataGridView1.Hide();
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dataGridView1.BackgroundColor = Color.White;
+
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             request_txt.Hide();
             request_btn.Hide();
             meal_id.Hide();
@@ -151,15 +162,18 @@ namespace food_Delivery_v_0._0.User_Controls
 
                 if (user.check_meal(Convert.ToInt32(meal_id.Text)))
                 {
-                    SqlCommand cmd = new SqlCommand("set identity_insert check_request on  insert into check_request(checker_id,meal_id)values('" + request_txt.Text + "','" + Convert.ToInt32(meal_id.Text) + "')", user.con);
-                    user.con.Open();
-                    cmd.ExecuteNonQuery();
-                    user.con.Close();
-                    MessageBox.Show("Request sent successfully !", "success!!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    request_txt.ForeColor = Color.Silver;
-                    request_txt.Text = "checker username";
-                    meal_id.ForeColor = Color.Silver;
-                    meal_id.Text = "meal ID";
+                    if (!user.check_requested(Convert.ToInt32(meal_id.Text)))
+                    {
+                        SqlCommand cmd = new SqlCommand("set identity_insert check_request on  insert into check_request(checker_id,meal_id)values('" + request_txt.Text + "','" + Convert.ToInt32(meal_id.Text) + "')", user.con);
+                        user.con.Open();
+                        cmd.ExecuteNonQuery();
+                        user.con.Close();
+                        MessageBox.Show("Request sent successfully !", "success!!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        request_txt.ForeColor = Color.Silver;
+                        request_txt.Text = "checker username";
+                        meal_id.ForeColor = Color.Silver;
+                        meal_id.Text = "meal ID";
+                    }
                 }
             }
         }

@@ -76,6 +76,18 @@
     <Compile Include="checker_requests.Designer.cs">
       <DependentUpon>checker_requests.cs</DependentUpon>
     </Compile>
+    <Compile Include="driverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driverForm.Designer.cs">
+      <DependentUpon>driverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerForm.Designer.cs">
+      <DependentUpon>customerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CookForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +187,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="checker_requests.resx">
       <DependentUpon>checker_requests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="driverForm.resx">
+      <DependentUpon>driverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerForm.resx">
+      <DependentUpon>customerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CookForm.resx">
       <DependentUpon>CookForm.cs</DependentUpon>

@@ -35,15 +35,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.customImageButton2 = new food_Delivery_v_0._0.CustomImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.fire_btn = new System.Windows.Forms.Button();
-            this.adminReviewButton = new System.Windows.Forms.Button();
             this.Backbutton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.adminReviewButton = new RoundButtonDemo.CircularButton();
+            this.fire_btn = new RoundButtonDemo.CircularButton();
+            this.adminReviews1 = new food_Delivery_v_0._0.User_Controls.AdminReviews();
             this.gradientPanel1 = new GradientPanelDemo.GradientPanel();
             this.footerBottom = new GradientPanelDemo.GradientPanel();
             this.TopHeader = new GradientPanelDemo.GradientPanel();
             this.elipseControl1 = new ElipseToolDemo.ElipseControl();
-            this.adminReviews1 = new food_Delivery_v_0._0.User_Controls.AdminReviews();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton2)).BeginInit();
@@ -87,7 +87,6 @@
             this.label2.Size = new System.Drawing.Size(63, 20);
             this.label2.TabIndex = 13;
             this.label2.Text = "Log out";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -99,7 +98,6 @@
             this.label3.Size = new System.Drawing.Size(35, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Exit";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // customImageButton2
             // 
@@ -127,28 +125,6 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // fire_btn
-            // 
-            this.fire_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fire_btn.Location = new System.Drawing.Point(592, 261);
-            this.fire_btn.Name = "fire_btn";
-            this.fire_btn.Size = new System.Drawing.Size(156, 127);
-            this.fire_btn.TabIndex = 11;
-            this.fire_btn.Text = "Firing";
-            this.fire_btn.UseVisualStyleBackColor = true;
-            this.fire_btn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // adminReviewButton
-            // 
-            this.adminReviewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminReviewButton.Location = new System.Drawing.Point(54, 261);
-            this.adminReviewButton.Name = "adminReviewButton";
-            this.adminReviewButton.Size = new System.Drawing.Size(156, 127);
-            this.adminReviewButton.TabIndex = 12;
-            this.adminReviewButton.Text = "Admin Review";
-            this.adminReviewButton.UseVisualStyleBackColor = true;
-            this.adminReviewButton.Click += new System.EventHandler(this.adminReviewButton_Click);
-            // 
             // Backbutton
             // 
             this.Backbutton.BackColor = System.Drawing.Color.Wheat;
@@ -175,6 +151,43 @@
             this.label1.Size = new System.Drawing.Size(321, 63);
             this.label1.TabIndex = 15;
             this.label1.Text = "Admin Reviews";
+            // 
+            // adminReviewButton
+            // 
+            this.adminReviewButton.BackColor = System.Drawing.Color.Sienna;
+            this.adminReviewButton.FlatAppearance.BorderSize = 0;
+            this.adminReviewButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.adminReviewButton.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminReviewButton.Location = new System.Drawing.Point(86, 246);
+            this.adminReviewButton.Name = "adminReviewButton";
+            this.adminReviewButton.Size = new System.Drawing.Size(191, 167);
+            this.adminReviewButton.TabIndex = 36;
+            this.adminReviewButton.Text = "Admin Review";
+            this.adminReviewButton.UseVisualStyleBackColor = false;
+            this.adminReviewButton.Click += new System.EventHandler(this.adminReviewButton_Click_1);
+            // 
+            // fire_btn
+            // 
+            this.fire_btn.BackColor = System.Drawing.Color.Sienna;
+            this.fire_btn.FlatAppearance.BorderSize = 0;
+            this.fire_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fire_btn.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fire_btn.Location = new System.Drawing.Point(584, 246);
+            this.fire_btn.Name = "fire_btn";
+            this.fire_btn.Size = new System.Drawing.Size(191, 167);
+            this.fire_btn.TabIndex = 35;
+            this.fire_btn.Text = "Firing";
+            this.fire_btn.UseVisualStyleBackColor = false;
+            this.fire_btn.Click += new System.EventHandler(this.fire_btn_Click);
+            // 
+            // adminReviews1
+            // 
+            this.adminReviews1.BackColor = System.Drawing.Color.Transparent;
+            this.adminReviews1.Location = new System.Drawing.Point(14, 212);
+            this.adminReviews1.Margin = new System.Windows.Forms.Padding(5);
+            this.adminReviews1.Name = "adminReviews1";
+            this.adminReviews1.Size = new System.Drawing.Size(826, 328);
+            this.adminReviews1.TabIndex = 13;
             // 
             // gradientPanel1
             // 
@@ -208,15 +221,6 @@
             this.elipseControl1.CornerRadius = 100;
             this.elipseControl1.TargetControl = this;
             // 
-            // adminReviews1
-            // 
-            this.adminReviews1.BackColor = System.Drawing.Color.Transparent;
-            this.adminReviews1.Location = new System.Drawing.Point(14, 212);
-            this.adminReviews1.Margin = new System.Windows.Forms.Padding(5);
-            this.adminReviews1.Name = "adminReviews1";
-            this.adminReviews1.Size = new System.Drawing.Size(826, 328);
-            this.adminReviews1.TabIndex = 13;
-            // 
             // Admin_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,11 +229,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(854, 604);
             this.ControlBox = false;
+            this.Controls.Add(this.adminReviewButton);
+            this.Controls.Add(this.fire_btn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Backbutton);
             this.Controls.Add(this.adminReviews1);
-            this.Controls.Add(this.adminReviewButton);
-            this.Controls.Add(this.fire_btn);
             this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.footerBottom);
             this.Controls.Add(this.TopHeader);
@@ -257,13 +261,13 @@
         private CustomImageButton customImageButton2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private GradientPanelDemo.GradientPanel gradientPanel1;
-        private System.Windows.Forms.Button fire_btn;
-        private System.Windows.Forms.Button adminReviewButton;
         private System.Windows.Forms.Button Backbutton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private CustomImageButton customImageButton1;
         private ElipseToolDemo.ElipseControl elipseControl1;
         private User_Controls.AdminReviews adminReviews1;
+        private RoundButtonDemo.CircularButton adminReviewButton;
+        private RoundButtonDemo.CircularButton fire_btn;
     }
 }

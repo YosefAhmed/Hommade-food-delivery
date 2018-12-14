@@ -47,6 +47,7 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.elipseControl1 = new ElipseToolDemo.ElipseControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton2)).BeginInit();
@@ -250,6 +251,11 @@
             this.flowLayoutPanel1.TabIndex = 91;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
+            // elipseControl1
+            // 
+            this.elipseControl1.CornerRadius = 100;
+            this.elipseControl1.TargetControl = this;
+            // 
             // fire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,6 +273,7 @@
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fire";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fire";
             this.Load += new System.EventHandler(this.fire_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -299,5 +306,6 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private ElipseToolDemo.ElipseControl elipseControl1;
     }
 }

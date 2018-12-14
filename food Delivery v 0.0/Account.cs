@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -12,7 +8,7 @@ namespace food_Delivery_v_0._0
 
     class Account
     {
-        public SqlConnection con = new SqlConnection(@"Data Source=desktop-sd63um7\sqlexpress;Initial Catalog=is_project;Integrated Security=True");
+        public SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-CEO0JJM\KAMAL1;Initial Catalog=is_project;Integrated Security=True");
         public  SqlCommand cmd;
 
         //Users data
@@ -83,40 +79,63 @@ namespace food_Delivery_v_0._0
         //Function for checking if a meal is already existed
         public bool check_meal(int Meal_id)
         {
+            bool reply;
             con.Open();
             cmd = new SqlCommand("select * from Menu  where meal_ID='" + Meal_id + "'", con);
             SqlDataReader RD = cmd.ExecuteReader();
 
-            if (!RD.Read())
+             if(RD.Read())
+            {
+                string x = RD["checked"].ToString();
+                if (x == "1")
+                {
+                    MessageBox.Show("Meal has been checked !", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    con.Close();
+                    reply= false;
+                }
+                else reply= true;
+            }
+    
+           else if (!RD.Read())
             {
                 MessageBox.Show("Meal Does Not Exist !", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 con.Close();
-                return false;
+                reply= false;
+            }
+            else
+            {
+                con.Close();
+                reply= true;
+            }
+             con.Close();
+             if (reply) return true;
+             else return false;
+        }
+
+        //Function for checking if a request is already existed
+        public bool check_requested(int Meal_id)
+        {
+            con.Open();
+            cmd = new SqlCommand("select * from check_request  where meal_ID='" + Meal_id + "'", con);
+            SqlDataReader RD = cmd.ExecuteReader();
+
+            if (RD.Read())
+            {
+                MessageBox.Show("This requist has been send !", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                con.Close();
+                return true;
             }
 
             else
             {
                 con.Close();
-                return true;
+                return false;
             }
-        }
-
-        //returns number of rows in a tabel
-        public string rows_count(string table_Name)
-        {
-            cmd=new SqlCommand("select count(*) from"+table_Name+"",con);
-            con.Open();
-            string counter;
-                SqlDataReader rd= cmd.ExecuteReader();
-
-            counter=rd[""].ToString();
-            con.Close();
-            return counter;
         }
 
         public void done_request(string meal_id)
         {
-            cmd = new SqlCommand("delete from check_request where meal_id='" +Convert.ToInt32(meal_id) + "'", con);
+            cmd = new SqlCommand("UPDATE Menu set Checker_ID='"+SignInControl.checker_username+"',checked='"+1+"' delete from check_request where meal_id='" + Convert.ToInt32(meal_id) + "'", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();

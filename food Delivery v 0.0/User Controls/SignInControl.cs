@@ -49,10 +49,14 @@ namespace food_Delivery_v_0._0
                             ParentForm.Hide();
                             if (sqlTable == "Customer")
                             {
+                                customerForm cf = new customerForm();
+                                cf.Show();
                                 //the customer's options goes here
                             }
                             else if (sqlTable == "Driver")
                             {
+                                driverForm df = new driverForm();
+                                df.Show();
                                 //the driver's options goes here
                             }
                             else if (sqlTable == "Cooks")

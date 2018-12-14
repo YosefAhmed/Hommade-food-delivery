@@ -22,9 +22,12 @@ namespace food_Delivery_v_0._0
 
         private void mealname_lbl_Click(object sender, EventArgs e)
         {
-            user.done_request(mealname_lbl.Text);
-            mealname_lbl.Text = "Checked";
-            mealname_lbl.ForeColor = Color.Green;
+            if (mealname_lbl.Text != "Checked")
+            {
+                user.done_request(mealname_lbl.Text);
+                mealname_lbl.Text = "Checked";
+                mealname_lbl.ForeColor = Color.Green;
+            }
         }
         public void put(string meal_id)
         {

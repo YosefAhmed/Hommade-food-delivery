@@ -20,7 +20,7 @@ namespace food_Delivery_v_0._0
             InitializeComponent();
             requests_layout_panl.Hide();
             notification_lbl.Hide();
-          //notification_lbl.Text="you have " +user.rows_count("Checker")+" requests";
+          //  notification_lbl.Text="you have " +user.rows_count("check_request") +" requests";
         }
         
         private void customImageButton2_Click(object sender, EventArgs e)
@@ -60,15 +60,17 @@ namespace food_Delivery_v_0._0
             user.con.Open();
             string counter = "";
            SqlDataReader dr = user.cmd.ExecuteReader() ;
+            int x = 0;
            while (dr.Read())
            {
                counter = dr["meal_id"].ToString();
                checker_requests cr = new checker_requests();
                  cr.put(counter);
-                  requests_layout_panl.Controls.Add(cr);  
+                  requests_layout_panl.Controls.Add(cr);
+                x++;
                   
            }
-           dr.Close();
+            notification_lbl.Text = "you have "+x+" requests"; dr.Close();
            user.con.Close();
             //Label mealname=new Label();
             // mealname.Text = "MealName";     
