@@ -116,8 +116,14 @@ namespace food_Delivery_v_0._0
 
         private void EditMeal_lbl_Click(object sender, EventArgs e)
         {
-            //EditMealForm f = new EditMealForm();
-            //f.Show();
+            EditMealForm f = new EditMealForm();
+            f.Show();
+        }
+
+        private void DeleteMeal_lbl_Click(object sender, EventArgs e)
+        {
+            DeleteMealForm f = new DeleteMealForm();
+            f.Show();
         }
     }
 }

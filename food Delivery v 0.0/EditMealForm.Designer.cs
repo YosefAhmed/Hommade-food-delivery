@@ -39,31 +39,38 @@
             this.label3 = new System.Windows.Forms.Label();
             this.MealName_txt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.MealID_txt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.dragControl1 = new DragControlDemo.DragControl();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Search_bt = new System.Windows.Forms.Button();
+            this.MealID_txt = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dragControl2 = new DragControlDemo.DragControl();
+            this.dragControl3 = new DragControlDemo.DragControl();
             this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Cancel_bt
             // 
             this.Cancel_bt.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancel_bt.Location = new System.Drawing.Point(289, 208);
+            this.Cancel_bt.Location = new System.Drawing.Point(289, 232);
             this.Cancel_bt.Name = "Cancel_bt";
             this.Cancel_bt.Size = new System.Drawing.Size(75, 31);
             this.Cancel_bt.TabIndex = 5;
             this.Cancel_bt.Text = "Cancel";
             this.Cancel_bt.UseVisualStyleBackColor = true;
+            this.Cancel_bt.Click += new System.EventHandler(this.Cancel_bt_Click);
             // 
             // Edit_bt
             // 
             this.Edit_bt.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Edit_bt.Location = new System.Drawing.Point(208, 208);
+            this.Edit_bt.Location = new System.Drawing.Point(208, 232);
             this.Edit_bt.Name = "Edit_bt";
             this.Edit_bt.Size = new System.Drawing.Size(75, 31);
             this.Edit_bt.TabIndex = 4;
             this.Edit_bt.Text = "Edit";
             this.Edit_bt.UseVisualStyleBackColor = true;
+            this.Edit_bt.Click += new System.EventHandler(this.Edit_bt_Click);
             // 
             // groupBox3
             // 
@@ -76,20 +83,18 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.MealName_txt);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.MealID_txt);
-            this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.Control;
-            this.groupBox3.Location = new System.Drawing.Point(12, 10);
+            this.groupBox3.Location = new System.Drawing.Point(12, 64);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(352, 192);
+            this.groupBox3.Size = new System.Drawing.Size(352, 162);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Meal information";
+            this.groupBox3.Text = "Meal information you want to edit";
             // 
             // MealDetails_txt
             // 
-            this.MealDetails_txt.Location = new System.Drawing.Point(76, 81);
+            this.MealDetails_txt.Location = new System.Drawing.Point(76, 47);
             this.MealDetails_txt.Multiline = true;
             this.MealDetails_txt.Name = "MealDetails_txt";
             this.MealDetails_txt.Size = new System.Drawing.Size(143, 47);
@@ -99,7 +104,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 84);
+            this.label5.Location = new System.Drawing.Point(6, 50);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 14);
             this.label5.TabIndex = 8;
@@ -107,7 +112,7 @@
             // 
             // CookUsername_txt
             // 
-            this.CookUsername_txt.Location = new System.Drawing.Point(100, 162);
+            this.CookUsername_txt.Location = new System.Drawing.Point(100, 128);
             this.CookUsername_txt.Name = "CookUsername_txt";
             this.CookUsername_txt.Size = new System.Drawing.Size(119, 21);
             this.CookUsername_txt.TabIndex = 7;
@@ -116,7 +121,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 165);
+            this.label4.Location = new System.Drawing.Point(6, 131);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 14);
             this.label4.TabIndex = 6;
@@ -124,7 +129,7 @@
             // 
             // MealPrice_txt
             // 
-            this.MealPrice_txt.Location = new System.Drawing.Point(76, 134);
+            this.MealPrice_txt.Location = new System.Drawing.Point(76, 100);
             this.MealPrice_txt.Name = "MealPrice_txt";
             this.MealPrice_txt.Size = new System.Drawing.Size(49, 21);
             this.MealPrice_txt.TabIndex = 5;
@@ -133,7 +138,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 137);
+            this.label3.Location = new System.Drawing.Point(6, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 14);
             this.label3.TabIndex = 4;
@@ -141,7 +146,7 @@
             // 
             // MealName_txt
             // 
-            this.MealName_txt.Location = new System.Drawing.Point(76, 54);
+            this.MealName_txt.Location = new System.Drawing.Point(76, 20);
             this.MealName_txt.Name = "MealName_txt";
             this.MealName_txt.Size = new System.Drawing.Size(143, 21);
             this.MealName_txt.TabIndex = 3;
@@ -150,39 +155,76 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 57);
+            this.label2.Location = new System.Drawing.Point(6, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 14);
             this.label2.TabIndex = 2;
             this.label2.Text = "Meal Name";
             // 
-            // MealID_txt
-            // 
-            this.MealID_txt.Location = new System.Drawing.Point(58, 25);
-            this.MealID_txt.Name = "MealID_txt";
-            this.MealID_txt.Size = new System.Drawing.Size(100, 21);
-            this.MealID_txt.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 14);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Meal ID";
-            // 
             // dragControl1
             // 
             this.dragControl1.SelectControl = this;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.Search_bt);
+            this.groupBox1.Controls.Add(this.MealID_txt);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Location = new System.Drawing.Point(12, 9);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(352, 53);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Enter meal ID";
+            // 
+            // Search_bt
+            // 
+            this.Search_bt.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search_bt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Search_bt.Location = new System.Drawing.Point(271, 15);
+            this.Search_bt.Name = "Search_bt";
+            this.Search_bt.Size = new System.Drawing.Size(75, 31);
+            this.Search_bt.TabIndex = 11;
+            this.Search_bt.Text = "Select";
+            this.Search_bt.UseVisualStyleBackColor = true;
+            this.Search_bt.Click += new System.EventHandler(this.Search_bt_Click_1);
+            // 
+            // MealID_txt
+            // 
+            this.MealID_txt.Location = new System.Drawing.Point(76, 20);
+            this.MealID_txt.Name = "MealID_txt";
+            this.MealID_txt.Size = new System.Drawing.Size(143, 21);
+            this.MealID_txt.TabIndex = 3;
+            this.MealID_txt.TextChanged += new System.EventHandler(this.MealID_txt_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 23);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 14);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Meal ID";
+            // 
+            // dragControl2
+            // 
+            this.dragControl2.SelectControl = this.groupBox1;
+            // 
+            // dragControl3
+            // 
+            this.dragControl3.SelectControl = this.groupBox3;
             // 
             // EditMealForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::food_Delivery_v_0._0.Properties.Resources._3;
-            this.ClientSize = new System.Drawing.Size(376, 249);
+            this.ClientSize = new System.Drawing.Size(376, 270);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Cancel_bt);
             this.Controls.Add(this.Edit_bt);
             this.Controls.Add(this.groupBox3);
@@ -193,6 +235,8 @@
             this.Load += new System.EventHandler(this.EditMealForm_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -210,8 +254,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox MealName_txt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox MealID_txt;
-        private System.Windows.Forms.Label label1;
         private DragControlDemo.DragControl dragControl1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox MealID_txt;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button Search_bt;
+        private DragControlDemo.DragControl dragControl2;
+        private DragControlDemo.DragControl dragControl3;
     }
 }
