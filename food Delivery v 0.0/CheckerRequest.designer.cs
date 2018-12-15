@@ -37,7 +37,9 @@
             this.driversButton = new System.Windows.Forms.Button();
             this.checkersButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.menusButton = new System.Windows.Forms.Button();
+            this.request_btn = new System.Windows.Forms.Button();
+            this.request_txt = new System.Windows.Forms.TextBox();
+            this.meal_id = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +51,7 @@
             this.orderRecordsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.orderRecordsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderRecordsButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.orderRecordsButton.Location = new System.Drawing.Point(3, 3);
+            this.orderRecordsButton.Location = new System.Drawing.Point(0, 3);
             this.orderRecordsButton.Name = "orderRecordsButton";
             this.orderRecordsButton.Size = new System.Drawing.Size(153, 34);
             this.orderRecordsButton.TabIndex = 0;
@@ -64,7 +66,7 @@
             this.rateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rateButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.rateButton.Location = new System.Drawing.Point(660, 3);
+            this.rateButton.Location = new System.Drawing.Point(512, 3);
             this.rateButton.Name = "rateButton";
             this.rateButton.Size = new System.Drawing.Size(153, 34);
             this.rateButton.TabIndex = 1;
@@ -78,7 +80,7 @@
             this.label1.BackColor = System.Drawing.Color.Peru;
             this.label1.Font = new System.Drawing.Font("Curlz MT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(300, 40);
+            this.label1.Location = new System.Drawing.Point(233, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(191, 43);
             this.label1.TabIndex = 2;
@@ -91,7 +93,7 @@
             this.adminsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.adminsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adminsButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.adminsButton.Location = new System.Drawing.Point(3, 105);
+            this.adminsButton.Location = new System.Drawing.Point(0, 81);
             this.adminsButton.Name = "adminsButton";
             this.adminsButton.Size = new System.Drawing.Size(75, 25);
             this.adminsButton.TabIndex = 3;
@@ -106,7 +108,7 @@
             this.customersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.customersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customersButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.customersButton.Location = new System.Drawing.Point(148, 105);
+            this.customersButton.Location = new System.Drawing.Point(109, 81);
             this.customersButton.Name = "customersButton";
             this.customersButton.Size = new System.Drawing.Size(95, 25);
             this.customersButton.TabIndex = 4;
@@ -121,7 +123,7 @@
             this.cooksButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cooksButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cooksButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.cooksButton.Location = new System.Drawing.Point(321, 105);
+            this.cooksButton.Location = new System.Drawing.Point(241, 81);
             this.cooksButton.Name = "cooksButton";
             this.cooksButton.Size = new System.Drawing.Size(75, 25);
             this.cooksButton.TabIndex = 5;
@@ -136,7 +138,7 @@
             this.driversButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.driversButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.driversButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.driversButton.Location = new System.Drawing.Point(495, 105);
+            this.driversButton.Location = new System.Drawing.Point(366, 81);
             this.driversButton.Name = "driversButton";
             this.driversButton.Size = new System.Drawing.Size(75, 25);
             this.driversButton.TabIndex = 6;
@@ -151,9 +153,9 @@
             this.checkersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkersButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.checkersButton.Location = new System.Drawing.Point(623, 105);
+            this.checkersButton.Location = new System.Drawing.Point(488, 81);
             this.checkersButton.Name = "checkersButton";
-            this.checkersButton.Size = new System.Drawing.Size(190, 25);
+            this.checkersButton.Size = new System.Drawing.Size(177, 25);
             this.checkersButton.TabIndex = 7;
             this.checkersButton.Text = "Food quality checkers";
             this.checkersButton.UseVisualStyleBackColor = false;
@@ -166,33 +168,60 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 136);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 112);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(665, 189);
+            this.dataGridView1.Size = new System.Drawing.Size(665, 220);
             this.dataGridView1.TabIndex = 8;
             // 
-            // menusButton
+            // request_btn
             // 
-            this.menusButton.BackColor = System.Drawing.Color.Wheat;
-            this.menusButton.FlatAppearance.BorderSize = 0;
-            this.menusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menusButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menusButton.ForeColor = System.Drawing.Color.IndianRed;
-            this.menusButton.Location = new System.Drawing.Point(321, 3);
-            this.menusButton.Name = "menusButton";
-            this.menusButton.Size = new System.Drawing.Size(153, 34);
-            this.menusButton.TabIndex = 12;
-            this.menusButton.Text = "Menus";
-            this.menusButton.UseVisualStyleBackColor = false;
-            this.menusButton.Click += new System.EventHandler(this.menusButton_Click);
+            this.request_btn.BackColor = System.Drawing.Color.Wheat;
+            this.request_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.request_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.request_btn.ForeColor = System.Drawing.Color.DarkRed;
+            this.request_btn.Location = new System.Drawing.Point(692, 112);
+            this.request_btn.Name = "request_btn";
+            this.request_btn.Size = new System.Drawing.Size(123, 39);
+            this.request_btn.TabIndex = 9;
+            this.request_btn.Text = "Request checker";
+            this.request_btn.UseVisualStyleBackColor = false;
+            this.request_btn.Click += new System.EventHandler(this.request_btn_Click);
+            // 
+            // request_txt
+            // 
+            this.request_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.request_txt.ForeColor = System.Drawing.Color.Silver;
+            this.request_txt.Location = new System.Drawing.Point(672, 182);
+            this.request_txt.Name = "request_txt";
+            this.request_txt.Size = new System.Drawing.Size(159, 22);
+            this.request_txt.TabIndex = 10;
+            this.request_txt.Text = "checker username";
+            this.request_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.request_txt.Enter += new System.EventHandler(this.request_txt_Enter);
+            this.request_txt.Leave += new System.EventHandler(this.request_txt_Leave);
+            // 
+            // meal_id
+            // 
+            this.meal_id.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meal_id.ForeColor = System.Drawing.Color.Silver;
+            this.meal_id.Location = new System.Drawing.Point(672, 210);
+            this.meal_id.Name = "meal_id";
+            this.meal_id.Size = new System.Drawing.Size(159, 22);
+            this.meal_id.TabIndex = 11;
+            this.meal_id.Text = "meal ID";
+            this.meal_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.meal_id.Enter += new System.EventHandler(this.meal_id_Enter);
+            this.meal_id.Leave += new System.EventHandler(this.meal_id_Leave);
             // 
             // AdminReviews
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.menusButton);
+            this.Controls.Add(this.meal_id);
+            this.Controls.Add(this.request_txt);
+            this.Controls.Add(this.request_btn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.checkersButton);
             this.Controls.Add(this.driversButton);
@@ -203,7 +232,7 @@
             this.Controls.Add(this.rateButton);
             this.Controls.Add(this.orderRecordsButton);
             this.Name = "AdminReviews";
-            this.Size = new System.Drawing.Size(826, 328);
+            this.Size = new System.Drawing.Size(834, 335);
             this.Load += new System.EventHandler(this.AdminReviews_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -222,6 +251,8 @@
         private System.Windows.Forms.Button driversButton;
         private System.Windows.Forms.Button checkersButton;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button menusButton;
+        private System.Windows.Forms.Button request_btn;
+        private System.Windows.Forms.TextBox request_txt;
+        private System.Windows.Forms.TextBox meal_id;
     }
 }

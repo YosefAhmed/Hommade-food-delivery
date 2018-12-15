@@ -125,6 +125,12 @@
       <DependentUpon>checker_form.cs</DependentUpon>
     </Compile>
     <Compile Include="recordd.cs" />
+    <Compile Include="User Controls\AdminRequestToChecker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\AdminRequestToChecker.Designer.cs">
+      <DependentUpon>AdminRequestToChecker.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\CircularButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="checker_form.resx">
       <DependentUpon>checker_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\AdminRequestToChecker.resx">
+      <DependentUpon>AdminRequestToChecker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\CustomImageButton.resx">
       <DependentUpon>CustomImageButton.cs</DependentUpon>

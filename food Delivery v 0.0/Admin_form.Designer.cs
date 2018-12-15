@@ -35,8 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.customImageButton2 = new food_Delivery_v_0._0.CustomImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Backbutton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkerRequestButton = new RoundButtonDemo.CircularButton();
             this.adminReviewButton = new RoundButtonDemo.CircularButton();
             this.fire_btn = new RoundButtonDemo.CircularButton();
             this.adminReviews1 = new food_Delivery_v_0._0.User_Controls.AdminReviews();
@@ -44,6 +44,7 @@
             this.footerBottom = new GradientPanelDemo.GradientPanel();
             this.TopHeader = new GradientPanelDemo.GradientPanel();
             this.elipseControl1 = new ElipseToolDemo.ElipseControl();
+            this.BackBt = new RoundButtonDemo.CircularButton();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton2)).BeginInit();
@@ -125,21 +126,6 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // Backbutton
-            // 
-            this.Backbutton.BackColor = System.Drawing.Color.Wheat;
-            this.Backbutton.FlatAppearance.BorderSize = 0;
-            this.Backbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Backbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Backbutton.ForeColor = System.Drawing.Color.IndianRed;
-            this.Backbutton.Location = new System.Drawing.Point(746, 548);
-            this.Backbutton.Name = "Backbutton";
-            this.Backbutton.Size = new System.Drawing.Size(96, 39);
-            this.Backbutton.TabIndex = 14;
-            this.Backbutton.Text = "Back";
-            this.Backbutton.UseVisualStyleBackColor = false;
-            this.Backbutton.Click += new System.EventHandler(this.Backbutton_Click_1);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -151,6 +137,20 @@
             this.label1.Size = new System.Drawing.Size(321, 63);
             this.label1.TabIndex = 15;
             this.label1.Text = "Admin Reviews";
+            // 
+            // checkerRequestButton
+            // 
+            this.checkerRequestButton.BackColor = System.Drawing.Color.Sienna;
+            this.checkerRequestButton.FlatAppearance.BorderSize = 0;
+            this.checkerRequestButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkerRequestButton.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkerRequestButton.Location = new System.Drawing.Point(346, 246);
+            this.checkerRequestButton.Name = "checkerRequestButton";
+            this.checkerRequestButton.Size = new System.Drawing.Size(191, 167);
+            this.checkerRequestButton.TabIndex = 37;
+            this.checkerRequestButton.Text = "Checker request";
+            this.checkerRequestButton.UseVisualStyleBackColor = false;
+            this.checkerRequestButton.Click += new System.EventHandler(this.checkerRequestButton_Click);
             // 
             // adminReviewButton
             // 
@@ -221,6 +221,19 @@
             this.elipseControl1.CornerRadius = 100;
             this.elipseControl1.TargetControl = this;
             // 
+            // BackBt
+            // 
+            this.BackBt.BackColor = System.Drawing.Color.Sienna;
+            this.BackBt.FlatAppearance.BorderSize = 0;
+            this.BackBt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackBt.Image = ((System.Drawing.Image)(resources.GetObject("BackBt.Image")));
+            this.BackBt.Location = new System.Drawing.Point(777, 542);
+            this.BackBt.Name = "BackBt";
+            this.BackBt.Size = new System.Drawing.Size(50, 45);
+            this.BackBt.TabIndex = 38;
+            this.BackBt.UseVisualStyleBackColor = false;
+            this.BackBt.Click += new System.EventHandler(this.BackBt_Click);
+            // 
             // Admin_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,10 +242,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(854, 604);
             this.ControlBox = false;
+            this.Controls.Add(this.BackBt);
+            this.Controls.Add(this.checkerRequestButton);
             this.Controls.Add(this.adminReviewButton);
             this.Controls.Add(this.fire_btn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Backbutton);
             this.Controls.Add(this.adminReviews1);
             this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.footerBottom);
@@ -261,7 +275,6 @@
         private CustomImageButton customImageButton2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private GradientPanelDemo.GradientPanel gradientPanel1;
-        private System.Windows.Forms.Button Backbutton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private CustomImageButton customImageButton1;
@@ -269,5 +282,7 @@
         private User_Controls.AdminReviews adminReviews1;
         private RoundButtonDemo.CircularButton adminReviewButton;
         private RoundButtonDemo.CircularButton fire_btn;
+        private RoundButtonDemo.CircularButton checkerRequestButton;
+        private RoundButtonDemo.CircularButton BackBt;
     }
 }
