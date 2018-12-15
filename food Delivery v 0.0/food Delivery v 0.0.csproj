@@ -76,6 +76,12 @@
     <Compile Include="checker_requests.Designer.cs">
       <DependentUpon>checker_requests.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteMealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteMealForm.Designer.cs">
+      <DependentUpon>DeleteMealForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="driverForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="checker_requests.resx">
       <DependentUpon>checker_requests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteMealForm.resx">
+      <DependentUpon>DeleteMealForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="driverForm.resx">
       <DependentUpon>driverForm.cs</DependentUpon>

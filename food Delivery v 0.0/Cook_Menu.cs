@@ -27,7 +27,7 @@ namespace food_Delivery_v_0._0
         private void Cook_Menu_Load(object sender, EventArgs e)
         {
             user.con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter(@"select * from Menu",user.con);
+            SqlDataAdapter sda = new SqlDataAdapter(@"select * from Menu where CookUsername='"+SignInControl.username+"' ",user.con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -102,7 +102,7 @@ namespace food_Delivery_v_0._0
         private void UpdateMenu_lbl_Click(object sender, EventArgs e)
         {
             user.con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter(@"select * from Menu", user.con);
+            SqlDataAdapter sda = new SqlDataAdapter(@"select * from Menu where CookUsername='" + SignInControl.username + "'", user.con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -116,8 +116,14 @@ namespace food_Delivery_v_0._0
 
         private void EditMeal_lbl_Click(object sender, EventArgs e)
         {
-            //EditMealForm f = new EditMealForm();
-            //f.Show();
+            EditMealForm f = new EditMealForm();
+            f.Show();
+        }
+
+        private void DeleteMeal_lbl_Click(object sender, EventArgs e)
+        {
+            DeleteMealForm f = new DeleteMealForm();
+            f.Show();
         }
     }
 }

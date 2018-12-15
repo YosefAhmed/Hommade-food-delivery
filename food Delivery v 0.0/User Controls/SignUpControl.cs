@@ -189,5 +189,21 @@ namespace food_Delivery_v_0._0
             Cook_Rb.Checked = false;
             Checker_Rb.Checked = false;
         }
+
+        private void customImageButton1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void customImageButton1_MouseHover(object sender, EventArgs e)
+        {
+            Password_txt.PasswordChar = '\0';
+            
+        }
+
+        private void customImageButton1_MouseLeave(object sender, EventArgs e)
+        {
+            Password_txt.PasswordChar = '*';
+
+        }
     }
 }

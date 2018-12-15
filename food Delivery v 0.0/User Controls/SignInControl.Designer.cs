@@ -200,6 +200,7 @@
             this.passwordtxt.PasswordChar = '*';
             this.passwordtxt.Size = new System.Drawing.Size(122, 29);
             this.passwordtxt.TabIndex = 33;
+            this.passwordtxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordtxt_KeyDown);
             // 
             // SignInControl
             // 

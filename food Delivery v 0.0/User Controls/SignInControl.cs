@@ -21,6 +21,7 @@ namespace food_Delivery_v_0._0
 
         string sqlTable = null; //to get the string of the table which data will be retrieved from
         public static string checker_username;
+        public static string username;
         private void SignIn_bt_Click(object sender, EventArgs e)
         {
             if (usernametxt.Text == "" || passwordtxt.Text == "")
@@ -33,6 +34,7 @@ namespace food_Delivery_v_0._0
             {
                 try
                 {
+                    username = usernametxt.Text;
                     user.con.Open();
                     if (user.con.State == System.Data.ConnectionState.Open) //to avoid database connection errors 
                     {
@@ -138,6 +140,11 @@ namespace food_Delivery_v_0._0
             checkerRadiobox.Checked = false;
             adminRadiobox.Checked = false;
             cookRadiobox.Checked = false;
+        }
+
+        private void passwordtxt_KeyDown(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }

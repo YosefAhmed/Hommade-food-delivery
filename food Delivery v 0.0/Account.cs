@@ -8,8 +8,9 @@ namespace food_Delivery_v_0._0
 
     class Account
     {
-        public SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-CEO0JJM\KAMAL1;Initial Catalog=is_project;Integrated Security=True");
+        public SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-SD63UM7\SQLEXPRESS;Initial Catalog=is_project;Integrated Security=True");
         public  SqlCommand cmd;
+        public SqlDataReader sdr;
 
         //Users data
         public String FullName;

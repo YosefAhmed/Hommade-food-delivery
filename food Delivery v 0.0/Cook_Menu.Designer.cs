@@ -134,6 +134,7 @@
             this.DeleteMeal_lbl.Size = new System.Drawing.Size(99, 18);
             this.DeleteMeal_lbl.TabIndex = 27;
             this.DeleteMeal_lbl.Text = "Delete meal";
+            this.DeleteMeal_lbl.Click += new System.EventHandler(this.DeleteMeal_lbl_Click);
             this.DeleteMeal_lbl.MouseEnter += new System.EventHandler(this.DeleteMeal_lbl_MouseEnter);
             this.DeleteMeal_lbl.MouseLeave += new System.EventHandler(this.DeleteMeal_lbl_MouseLeave);
             // 

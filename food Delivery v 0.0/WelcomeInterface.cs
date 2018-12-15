@@ -138,5 +138,10 @@ namespace food_Delivery_v_0._0
             label6.Show();
             label7.Show();
         }
+
+        private void Slider_Pic_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
