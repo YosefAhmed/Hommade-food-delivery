@@ -36,5 +36,15 @@ namespace food_Delivery_v_0._0
                 Application.Exit();
         }
 
+        private void OrderButton_Click(object sender, EventArgs e)
+        {
+            OrderButton.Hide();
+            TrackButton.Hide();
+            Button order = OrderButton;
+            Button track = TrackButton;
+            MakeorderUsercontrol orderControl = new MakeorderUsercontrol(order, track);
+            orderControl.Location = new Point(80, 130);
+            Controls.Add(orderControl);
+        }
     }
 }

@@ -18,7 +18,8 @@ namespace food_Delivery_v_0._0
         public fire()
         {
             InitializeComponent();
-            
+            groupBox1.BackColor = Color.FromArgb(150, Color.Black);
+
         }
         private void Header_Paint(object sender, PaintEventArgs e)
         {
@@ -95,6 +96,31 @@ namespace food_Delivery_v_0._0
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void customImageButton1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to Log out ?", "Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                WelcomeInterface w = new WelcomeInterface();
+                w.Show();
+            }
+        }
+
+        private void customImageButton2_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private void BackBt_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_form a = new Admin_form();
+            a.Show();
         }
     }
 }

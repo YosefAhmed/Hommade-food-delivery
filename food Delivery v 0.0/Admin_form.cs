@@ -18,7 +18,6 @@ namespace food_Delivery_v_0._0
             adminReviews1.BackColor = Color.FromArgb(150, Color.Black);
             adminReviews1.Hide();
             BackBt.Hide();
-            label1.Hide();
         }
         User_Controls.AdminRequestToChecker obj = new User_Controls.AdminRequestToChecker();
 
@@ -47,8 +46,10 @@ namespace food_Delivery_v_0._0
 
         private void fire_btn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             fire f = new fire();
             f.Show();
+            
         }
 
         private void adminReviewButton_Click_1(object sender, EventArgs e)
@@ -58,7 +59,6 @@ namespace food_Delivery_v_0._0
             adminReviewButton.Hide();
             BackBt.Show();
             adminReviews1.Show();
-            label1.Show();
         }
 
         private void checkerRequestButton_Click(object sender, EventArgs e)
@@ -85,7 +85,6 @@ namespace food_Delivery_v_0._0
             adminReviewButton.Show();
             BackBt.Hide();
             adminReviews1.Hide();
-            label1.Hide();
             obj.Visible = false;
         }
     }

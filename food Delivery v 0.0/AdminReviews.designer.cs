@@ -203,7 +203,7 @@
             this.Controls.Add(this.rateButton);
             this.Controls.Add(this.orderRecordsButton);
             this.Name = "AdminReviews";
-            this.Size = new System.Drawing.Size(826, 328);
+            this.Size = new System.Drawing.Size(818, 411);
             this.Load += new System.EventHandler(this.AdminReviews_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

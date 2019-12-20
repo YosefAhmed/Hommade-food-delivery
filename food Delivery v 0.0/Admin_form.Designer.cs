@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.customImageButton2 = new food_Delivery_v_0._0.CustomImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.checkerRequestButton = new RoundButtonDemo.CircularButton();
             this.adminReviewButton = new RoundButtonDemo.CircularButton();
             this.fire_btn = new RoundButtonDemo.CircularButton();
@@ -125,18 +124,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Peru;
-            this.label1.Font = new System.Drawing.Font("Curlz MT", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Firebrick;
-            this.label1.Location = new System.Drawing.Point(239, 113);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(321, 63);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Admin Reviews";
             // 
             // checkerRequestButton
             // 
@@ -246,7 +233,6 @@
             this.Controls.Add(this.checkerRequestButton);
             this.Controls.Add(this.adminReviewButton);
             this.Controls.Add(this.fire_btn);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.adminReviews1);
             this.Controls.Add(this.gradientPanel1);
             this.Controls.Add(this.footerBottom);
@@ -262,7 +248,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.customImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -275,7 +260,6 @@
         private CustomImageButton customImageButton2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private GradientPanelDemo.GradientPanel gradientPanel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private CustomImageButton customImageButton1;
         private ElipseToolDemo.ElipseControl elipseControl1;
